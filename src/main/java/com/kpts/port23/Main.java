@@ -3,12 +3,12 @@ package com.kpts.port23;
 import java.util.Random;
 import java.util.stream.IntStream;
 
-import uk.ac.manchester.tornado.api.ImmutableTaskGraph;
-import uk.ac.manchester.tornado.api.TaskGraph;
-import uk.ac.manchester.tornado.api.TornadoExecutionPlan;
-import uk.ac.manchester.tornado.api.annotations.Parallel;
-import uk.ac.manchester.tornado.api.enums.DataTransferMode;
-import uk.ac.manchester.tornado.api.enums.TornadoDeviceType;
+//import uk.ac.manchester.tornado.api.ImmutableTaskGraph;
+//import uk.ac.manchester.tornado.api.TaskGraph;
+//import uk.ac.manchester.tornado.api.TornadoExecutionPlan;
+//import uk.ac.manchester.tornado.api.annotations.Parallel;
+//import uk.ac.manchester.tornado.api.enums.DataTransferMode;
+//import uk.ac.manchester.tornado.api.enums.TornadoDeviceType;
 
 public class Main {
 	
