@@ -15,8 +15,8 @@ public class Main {
     private static final int WARMING_UP_ITERATIONS = 15;
 
     private static void matrixMultiplication(final float[] matrixA, final float[] matrixB, final float[] result, final int size) {
-        for (@Parallel int i = 0; i < size; i++) {
-            for (@Parallel int j = 0; j < size; j++) {
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
                 float sum = 0.0f;
                 for (int k = 0; k < size; k++) {
                     sum += matrixA[(i * size) + k] * matrixB[(k * size) + j];
