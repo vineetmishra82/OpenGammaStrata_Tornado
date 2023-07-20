@@ -42,6 +42,11 @@
    <scope>compile</scope>
 </dependency>
 
+  <dependency>
+                    <groupId>org.graalvm.truffle</groupId>
+                    <artifactId>truffle-api</artifactId>
+                    <version>23.0.0</version>
+                </dependency>
 
   
   </dependencies>
