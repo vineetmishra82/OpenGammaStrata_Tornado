@@ -24,12 +24,14 @@
       <groupId>tornado</groupId>
       <artifactId>tornado-api</artifactId>
       <version>0.15.1</version>
+       <scope>compile</scope>
    </dependency>
 
    <dependency>
       <groupId>tornado</groupId>
       <artifactId>tornado-matrices</artifactId>
       <version>0.15.1</version>
+       <scope>compile</scope>
    </dependency>
 
   
@@ -37,11 +39,27 @@
   <groupId>com.opengamma.strata</groupId>
   <artifactId>strata-measure</artifactId>
   <version>2.12.27</version>
+   <scope>compile</scope>
 </dependency>
 
 
   
   </dependencies>
+  <profiles>
+        <profile>
+            <id>jdk-11</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <dependencies>
+                <dependency>
+                    <groupId>org.graalvm.truffle</groupId>
+                    <artifactId>truffle-api</artifactId>
+                    <version>23.0.0</version>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>
   <build>
  
 <finalName>openStrata</finalName>

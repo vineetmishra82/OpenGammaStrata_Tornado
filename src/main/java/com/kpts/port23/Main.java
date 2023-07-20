@@ -16,7 +16,7 @@ public class Main {
 
     private static void matrixMultiplication(final float[] matrixA, final float[] matrixB, final float[] result, final int size) {
         for (@Parallel int i = 0; i < size; i++) {
-            for (@Parallel int j = 0; j < size; j++) {
+            for (int j = 0; j < size; j++) {
                 float sum = 0.0f;
                 for (int k = 0; k < size; k++) {
                     sum += matrixA[(i * size) + k] * matrixB[(k * size) + j];
@@ -55,7 +55,7 @@ public class Main {
 
         ImmutableTaskGraph immutableTaskGraph = taskGraph.snapshot();
         TornadoExecutionPlan executor = new TornadoExecutionPlan(immutableTaskGraph);
-        executor.withWarmUp();
+        //executor.withWarmUp();
 
         // 1. Warm up Tornado
         for (int i = 0; i < WARMING_UP_ITERATIONS; i++) {
