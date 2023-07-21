@@ -36,6 +36,7 @@ public class Main {
         }
 
         System.out.println("Computing MxM of " + size + "x" + size);
+        System.out.println("Inside main method");
 
         float[] matrixA = new float[size * size];
         float[] matrixB = new float[size * size];
